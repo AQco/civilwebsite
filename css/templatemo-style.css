@@ -427,3 +427,16 @@ input { height: 50px; }
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
 /* END MEDIA 360 */
+.portfolio-thumb {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    object-position: center; /* Centers the image within the container */
+}
