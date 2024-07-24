@@ -288,7 +288,7 @@ hr {
   float: left;
   overflow: hidden;
   margin-bottom: 20px;
-  padding: 10px; /* Optional: add some padding between the items */
+  padding: 0px; /* Optional: add some padding between the items */
 }
 .fluid-img {
   width: 100%;
