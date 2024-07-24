@@ -430,7 +430,7 @@ input { height: 50px; }
 /* END MEDIA 360 */
 .portfolio-thumb {
     width: 100%;
-    height: 400px; /* Adjust height as needed */
+    height: 250px; /* Adjust height as needed */
     overflow: hidden;
     position: relative;
 }
