@@ -55,16 +55,16 @@ hr {
   line-height: 45px;
   letter-spacing: 1px;
 }
-.navbar-default .navbar-nav li a:hover { color: #e06666; }
+.navbar-default .navbar-nav li a:hover { color: #cc0000; }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #e06666;
+  color: #cc0000;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #e06666;
+  color: #cc0000;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
@@ -72,7 +72,7 @@ hr {
   padding-top: 10px;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background: #e06666;
+  background: #cc0000;
   border-color: transparent;
 }
 .navbar-default .navbar-toggle:hover,
@@ -103,13 +103,13 @@ hr {
  }
 .tm-home-title { font-size: 60px; }
 .tm-home-subtitle {
-  color: #e06666;
+  color: #cc0000;
   font-weight: bold;
   padding-bottom: 40px;
   letter-spacing: 2px;
 }
 .tm-view-more-btn {
-  background: #e06666;
+  background: #cc0000;
   color: #ffffff;
   border: none;
   border-radius: 2px;
@@ -122,7 +122,7 @@ hr {
 }
 .tm-view-more-btn:hover {
   background: #ffffff;
-  color: #e06666;
+  color: #cc0000;
 }
 /* END HOME */
 
@@ -132,7 +132,7 @@ hr {
   padding-bottom: 100px;
 }
 .tm-work-h3 {
-  color: #e06666;
+  color: #cc0000;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -146,7 +146,7 @@ hr {
   -webkit-transition: all 0.6s ease-in;
           transition: all 0.6s ease-in;
 }
-.work-wrapper:hover { border-color: #e06666; }
+.work-wrapper:hover { border-color: #cc0000; }
 .work-wrapper .fa {
   color: #888888;
   font-size: 60px;
@@ -207,7 +207,7 @@ hr {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #e06666;
+  background: #cc0000;
   color: #ffffff;
   top: 0;
   right: 0;
@@ -267,7 +267,7 @@ hr {
 .filter-wrapper li a:focus,
  .filter-wrapper li a:hover,
  .filter-wrapper li a.selected {
-  background: #e06666;
+  background: #cc0000;
   border-color: transparent;
   color: #ffffff;
 }
@@ -309,7 +309,7 @@ hr {
   border-radius: 2px;
   height: 4px;
 }
-.progress-bar-danger { background: #e06666; }
+.progress-bar-danger { background: #cc0000; }
 .tm-progress-label {
   font-size: 12px;
   font-weight: bold;
