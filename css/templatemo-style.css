@@ -9,7 +9,7 @@
   margin: 0;
 }
 .tm-portfolio .col-md-3,
- .tm-portfolio .col-sm-3 {
+.tm-portfolio .col-sm-3 {
   padding: 0;
   margin: 0;
 }
@@ -86,5 +86,62 @@
   text-decoration: none;
   margin-right: 6px;
   margin-bottom: 10px;
+}
+
+/* FILTER CSS */
+.filter-wrapper {
+  width: 100%;
+  margin: 0 0 24px 0;
+  overflow: hidden;
+  text-align: center;
+}
+.filter-wrapper li {
+  display: inline-block;
+  margin: 4px;
+}
+.filter-wrapper li a {
+  color: #999999;
+  padding: 8px 17px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+}
+.filter-wrapper li a:focus,
+.filter-wrapper li a:hover,
+.filter-wrapper li a.selected {
+  background: #cc0000;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+/* ISOTOPE BOX CSS */
+.iso-box-section {
+  width: 100%;
+}
+.iso-box-wrapper {
+  width: 100%;
+  padding: 0;
+  clear: both;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0; /* Removes the gap between items */
+}
+.iso-box {
+  position: relative;
+  min-height: 50px;
+  float: left;
+  overflow: hidden;
+  margin: 0; /* Removes margin between the items */
+  padding: 0; /* Optional: add some padding between the items */
+  width: 25%; /* Adjust the width as needed for a 4-column layout */
+}
+.fluid-img {
+  width: 100%;
+  display: block;
+  height: auto;
 }
 /* END PORTFOLIO */
