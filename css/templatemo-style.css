@@ -268,7 +268,7 @@ hr {
 }
 
 /* Desktop Styles */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .tm-portfolio .container {
     width: 100%;
     padding: 0;
@@ -299,7 +299,7 @@ hr {
 }
 
 /* Mobile Styles */
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .tm-portfolio .container,
   .tm-portfolio .col-md-3,
   .tm-portfolio .col-sm-3 {
