@@ -90,3 +90,14 @@ jQuery(document).ready(function($){
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
+
+// Smooth scrolling for within-page links
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
