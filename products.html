@@ -191,5 +191,18 @@
     <script src="js/isotope.js"></script>
     <script src="js/imagesloaded.min.js"></script>
     <script src="js/custom.js"></script>
+	<script>
+    $(document).ready(function() {
+        // Check for hash in URL and scroll to it
+        var hash = window.location.hash;
+        if (hash) {
+            if ($(hash).length) {
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000);
+            }
+        }
+    });
+</script>
 </body>
 </html>
