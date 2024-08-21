@@ -56,17 +56,31 @@ hr {
 .navbar-default .navbar-brand {
   color: #707070; /* Ash color for the brand text */
   font-weight: bold;
-  font-size: 1.875rem;
+  font-size: 5.2rem; /* Double the font size */
   line-height: 2.8125rem;
-  padding: 0.625rem 0 0 0.75rem;
+  padding: 0.625rem 0; /* Adjusted padding */
+  text-align: center; /* Center the text */
+  width: 100%; /* Make the brand span the entire width */
+  display: block; /* Ensure the brand name is treated as a block element */
+}
+
+.navbar-default .navbar-nav {
+  float: none; /* Center the nav items */
+  text-align: center; /* Ensure the items are centered */
+}
+
+.navbar-default .navbar-nav li {
+  display: inline-block; /* Align items horizontally */
+  float: none; /* Reset any floating */
 }
 
 .navbar-default .navbar-nav li a {
   color: #707070; /* Ash color for navigation links */
-  font-size: 2.6rem; /* Increased font size for better visibility */
+  font-size: 5.2rem; /* Double the font size */
   font-weight: bold;
-  line-height: 2.8125rem;
+  line-height: 3.5rem; /* Adjust line-height for better spacing */
   letter-spacing: 1px;
+  padding: 1rem 1.5rem; /* Increased padding for a larger clickable area */
 }
 
 .navbar-default .navbar-nav li a:hover,
@@ -170,8 +184,6 @@ hr {
   font-weight: bold;
   padding-bottom: 2rem;
 }
-
-/* Removed portfolio section styles */
 
 /* Common Styles */
 .tm-portfolio {
