@@ -1,293 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Siraj Associates</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #cc0000;
-            --secondary-color: #202020;
-            --text-color: #606060;
-            --background-color: #fff;
-            --border-color: #f2f2f2;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Raleway', sans-serif;
-            font-size: 16px;
-            color: var(--text-color);
-            line-height: 1.75;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h1, h2, h3 {
-            font-weight: 300;
-            color: #303030;
-        }
-
-        .title {
-            font-size: 2.5rem;
-            padding-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        /* Navigation */
-        .navbar-default {
-            background: #ffffff;
-            box-shadow: 0 2px 8px rgba(50, 50, 50, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .navbar-brand {
-            color: #707070;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        .navbar-nav {
-            display: flex;
-            list-style: none;
-        }
-
-        .navbar-nav li {
-            margin-left: 1.5rem;
-        }
-
-        .navbar-nav a {
-            color: #707070;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-nav a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Home Section */
-        .templatemo-home {
-            background: url('../images/home-BG.jpg') center center / cover fixed;
-            color: var(--background-color);
-            display: flex;
-            align-items: center;
-            text-align: center;
-            height: 100vh;
-        }
-
-        .tm-home-title {
-            font-size: 3rem;
-            text-transform: uppercase;
-        }
-
-        .tm-home-subtitle {
-            color: var(--primary-color);
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            text-decoration: none;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background: var(--primary-color);
-            color: var(--background-color);
-        }
-
-        .btn-primary:hover {
-            background: var(--background-color);
-            color: var(--primary-color);
-        }
-
-        /* Vision, Mission, Values Sections */
-        .tm-padding-top-bottom-100 {
-            padding: 6.25rem 0;
-        }
-
-        /* Work Section */
-        .work-wrapper {
-            border: 1px solid #666;
-            border-radius: 2px;
-            text-align: center;
-            padding: 3rem 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .work-wrapper:hover {
-            border-color: var(--primary-color);
-        }
-
-        .work-wrapper i {
-            color: #888;
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* About Section */
-        .tm-about {
-            background-color: var(--border-color);
-        }
-
-        /* Contact Section */
-        .tm-contact {
-            background-color: var(--secondary-color);
-            color: var(--background-color);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .navbar-nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar-nav li {
-                margin: 0.5rem 0;
-            }
-
-            .tm-home-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- SITE TITLE -->
+	<title>Siraj Associates</title>
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
-    <header class="navbar-default">
-        <nav class="container">
-            <a href="#" class="navbar-brand">SIRAJ ASSOCIATES</a>
-            <ul class="navbar-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Our Works</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body data-spy="scroll" data-target="#rock-navigation">
+	<!-- START NAVIGATION -->
+	<div class="navbar-default">
+    <div class="container">
+        <a href="#" class="navbar-brand">SIRAJ ASSOCIATES</a>
+        <nav class="collapse navbar-collapse" id="rock-navigation">
+            <ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
+                <li><a href="#home" class="smoothScroll">Home</a></li>
+                <li><a href="#work" class="smoothScroll"> Our Works</a></li>
+                <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+                <li><a href="#resume" class="smoothScroll">Resume</a></li>
+                <li><a href="#about" class="smoothScroll">About</a></li>
+                <li><a href="#contact" class="smoothScroll">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</div>
+	<!-- END NAVIGATION -->
 
-    <section id="home" class="templatemo-home">
-        <div class="container">
-            <h1 class="tm-home-title"><strong>SIRAJ ASSOCIATES</strong></h1>
-            <h2 class="tm-home-subtitle">We help you build your dream home.</h2>
-            <p>We are a construction and contracting firm from <strong>Cochin</strong>. We strive to provide the highest <strong>quality</strong> service with a commitment to <strong>safety</strong> and <strong>customer satisfaction</strong>.</p>
-            <a href="https://api.whatsapp.com/send?phone=+916235393474&text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20Siraj%20Associates" class="btn btn-primary">Get In Touch</a>
-        </div>
-    </section>
+	<!-- START HOME -->
+	<section id="home" class="templatemo-home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-1"></div>
+				<div class="col-md-8 col-sm-10">
+					<h1 class="tm-home-title"><strong>SIRAJ ASSOCIATES</strong></h1>
+					<h2 class="tm-home-subtitle">We help you build your dream home.</h2>
+					<p>We are a construction and contracting firm from <strong>Cochin</strong>. We strive to provide the highest <strong>quality</strong> service with a commitment to <strong>safety </strong>and <strong>customer satisfaction</strong>.</p>
+					<a href="https://api.whatsapp.com/send?phone=+916235393474&text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20Siraj%20Associates" class="btn btn-default smoothScroll tm-view-more-btn">Get In Touch</a>
+				</div>
+				<div class="col-md-2 col-sm-1"></div>
+			</div>
+		</div>
+	</section>
+	<!-- END HOME -->
 
-    <section id="vision" class="tm-padding-top-bottom-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="title">Our <strong>Vision</strong></h2>
-                    <p>To be the leading construction firm providing assured quality, efficiency and timely completed projects earning the trust and favorability of all our clientele.</p>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="title">Our <strong>Mission</strong></h2>
-                    <p>To provide our customers with superior quality structures built abiding the necessary standards and regulations with efficient coordination, appropriate technology and services, and thorough satisfaction from our clients.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- START RESUME (VISION, MISSION, VALUES) -->
+	<section id="vision" class="tm-padding-top-bottom-100">
+		<div class="container">
+			<div class="row">
+				<!-- Left column -->
+				<div class="col-md-6 col-sm-6">
+					<h2 class="title">Our <strong>Vision</strong></h2>
+					<p>To be the leading construction firm providing assured quality, efficiency and timely completed projects earning the trust and favorability of all our clientele.</p>
+				</div>
+				<!-- Right column -->
+				<div class="col-md-6 col-sm-6">
+					<h2 class="title">Our <strong>Mission</strong></h2>
+					<p>To provide our customers with superior quality structures built abiding the necessary standards and regulations with efficient coordination, appropriate technology and services, and thorough satisfaction from our clients.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <section id="values" class="tm-padding-top-bottom-100">
-        <div class="container">
-            <h2 class="title">Our <strong>Values</strong></h2>
-            <p>Through our unwavering commitment to our mission and core values, we aim to be recognized as a trusted and preferred construction partner. We strive to exceed our clients' expectations, build long-term partnerships, and contribute to the development of sustainable and inspiring structures that positively impact communities. At Siraj Associates, we are dedicated to transforming visions into reality, one exceptional construction project at a time.</p>
-            <ul>
-                <li>Quality construction</li>
-                <li>Timely completion</li>
-                <li>Customer satisfaction</li>
-                <li>Technical excellence</li>
-                <li>Adopting the latest construction machinery and management techniques</li>
-            </ul>
-        </div>
-    </section>
+	<section id="values" class="tm-padding-top-bottom-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">Our <strong>Values</strong></h2>
+					<p>Through our unwavering commitment to our mission and core values, we aim to be recognized as a trusted and preferred construction partner. We strive to exceed our clients' expectations, build long-term partnerships, and contribute to the development of sustainable and inspiring structures that positively impact communities. At Siraj Associates, we are dedicated to transforming visions into reality, one exceptional construction project at a time.</p>
+					<ul>
+						<li>Quality construction</li>
+						<li>Timely completion</li>
+						<li>Customer satisfaction</li>
+						<li>Technical excellence</li>
+						<li>Adopting the latest construction machinery and management techniques</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <section id="about" class="tm-about">
-        <div class="container">
-            <div class="row">
-                </div>
-                <div class="col-md-6">
-                    <h2 class="title">About <strong>US</strong></h2>
-                    <p>Siraj Associates is a construction and contracting firm based in Kochi offering services in civil construction, technical consultancy, project management, and interior and landscaping works. The firm was established by Mr. Mohammed Siraj, a chartered civil engineer with more than 30 years of experience in civil contracting and construction management.</p>
-                    <p>Our experience and expertise lie in civil and finishing works of high-rise buildings, commercial and institutional structures, and residential villas with properties panned in Kerala and Bangalore.</p>
-                    <p>Backed up by an adept team of professionals and headed by Mr. Siraj, we strive to offer services with an uncompromised commitment to Quality, Health, and Safety.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- END RESUME -->
 
-    <section id="work" class="tm-padding-top-bottom-100">
-        <div class="container">
-            <h2 class="title">Our <strong>Works</strong></h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="work-wrapper">
-                        <i class="fa fa-home"></i>
-                        <h3>RESIDENTIAL PROJECTS</h3>
-                        <p>We specialize in high-quality residential projects tailored to your needs.</p>
-                        <a href="#" class="btn btn-primary">View more</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-wrapper">
-                        <i class="fa fa-building"></i>
-                        <h3>COMMERCIAL PROJECTS</h3>
-                        <p>Our team has extensive experience in constructing commercial properties.</p>
-                        <a href="#" class="btn btn-primary">View more</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-wrapper">
-                        <i class="fa fa-university"></i>
-                        <h3>INSTITUTIONAL PROJECTS</h3>
-                        <p>We have delivered several successful institutional projects across various sectors.</p>
-                        <a href="#" class="btn btn-primary">View more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- START ABOUT -->
+	<section id="about" class="tm-about">
+		<div class="container">
+			<div class="row">
+				<!-- Left column for image placeholder -->
+				<div class="col-md-6 col-sm-5">
+					<img src="images/civil.jpg" alt="About Us Image" class="img-responsive">
+				</div>
+				<!-- Right column for text content -->
+				<div class="col-md-6 col-sm-7">
+					<div class="title">
+						<h2>About <strong>US</strong></h2>
+					</div>
+					<p>Siraj Associates is a construction and contracting firm based in Kochi offering services in civil construction, technical consultancy, project management, and interior and landscaping works. The firm was established by Mr. Mohammed Siraj, a chartered civil engineer with more than 30 years of experience in civil contracting and construction management. After graduating from Govt. Engineering College, Thrissur in 1988, he has to his credit the experience of starting Delta Projects, a civil contracting firm in 1995, and leading the firm till 2001 as the managing partner. Later, when upgraded to Delco Project Pvt. Limited, he was the Executive Director from 2001 to 2011. He then led Faizaan Interiors and Developers as the CEO from 2011 to 2019.</p>
+					<p>Our experience and expertise lie in civil and finishing works of high-rise buildings, commercial and institutional structures, and residential villas with properties panned in Kerala and Bangalore.</p>
+					<p>Backed up by an adept team of professionals and headed by Mr. Siraj, we strive to offer services with an uncompromised commitment to Quality, Health, and Safety.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ABOUT -->
 
-    <section id="contact" class="tm-contact">
-        <div class="container">
-            <h2 class="title">Contact <strong>Us</strong></h2>
-            <div class="contact-form">
-                <!-- Add contact form here -->
-            </div>
-        </div>
-    </section>
+	<!-- START WORK -->
+	<section id="work" class="tm-padding-top-bottom-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-11">
+					<h2 class="title">Our <strong>Works</strong></h2>						
+				</div>
+				<!-- Residential Projects -->
+				<div class="col-md-4 col-sm-4">
+					<div class="work-wrapper">
+						<a href="https://www.behance.net/ashfaqueahammed3">
+							<i class="fa fa-home"></i>
+							<h3 class="text-uppercase tm-work-h3">RESIDENTIAL PROJECTS</h3>
+						</a>
+						<hr>
+						<p>We specialize in high-quality residential projects tailored to your needs.</p>
+						<a href="https://www.behance.net/ashfaqueahammed3" class="btn btn-primary">View more</a>
+					</div>
+				</div>
+				<!-- Commercial Projects -->
+				<div class="col-md-4 col-sm-4">
+					<div class="work-wrapper">
+						<a href="https://www.behance.net/ashfaqueahammed3">
+							<i class="fa fa-building"></i>
+							<h3 class="text-uppercase tm-work-h3">COMMERCIAL PROJECTS</h3>
+						</a>
+						<hr>
+						<p>Our team has extensive experience in constructing commercial properties.</p>
+						<a href="https://www.behance.net/ashfaqueahammed3" class="btn btn-primary">View more</a>
+					</div>
+				</div>
+				<!-- Schools -->
+				<div class="col-md-4 col-sm-4">
+					<div class="work-wrapper">
+						<a href="https://www.behance.net/ashfaqueahammed3">
+							<i class="fa fa-graduation-cap"></i>
+							<h3 class="text-uppercase tm-work-h3">SCHOOLS</h3>
+						</a>
+						<hr>
+						<p>We deliver state-of-the-art educational facilities that inspire learning.</p>
+						<a href="https://www.behance.net/ashfaqueahammed3" class="btn btn-primary">View more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END WORK -->
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Siraj Associates. All rights reserved.</p>
-        </div>
-    </footer>
+	<!-- START CONTACT -->
+	<section id="contact" class="tm-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<h2>Contact <strong>Us</strong></h2>
+							</div>
+						</div>
+						<!-- CONTACT FORM HERE -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CONTACT -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // Add any necessary JavaScript here
-    </script>
+	<!-- SCRIPTS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/templatemo-script.js"></script>
 </body>
 </html>
