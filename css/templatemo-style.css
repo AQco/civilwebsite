@@ -56,14 +56,14 @@ hr {
 .navbar-default .navbar-brand {
   color: #707070; /* Ash color for the brand text */
   font-weight: bold;
-  font-size: 1.875rem;
+  font-size: 2.0rem;
   line-height: 2.8125rem;
   padding: 0.625rem 0 0 0.75rem;
 }
 
 .navbar-default .navbar-nav li a {
   color: #707070; /* Ash color for navigation links */
-  font-size: 2.0rem; /* Increased font size for better visibility */
+  font-size: 1.4.0rem; /* Increased font size for better visibility */
   font-weight: bold;
   line-height: 2.8125rem;
   letter-spacing: 1px;
