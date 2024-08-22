@@ -32,15 +32,23 @@ hr {
 }
 
 /* START NAVIGATION */
-.sticky-navigation { opacity: 1; }
+.sticky-navigation { 
+  opacity: 1;
+}
+
 .navbar-default {
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  width: 100%;
   background: #fff;
   border: none;
   -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
           box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
   margin: 0;
   padding: 0;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
 }
+
 .navbar-default .navbar-brand {
   color: #212227;
   font-weight: bold;
@@ -48,6 +56,7 @@ hr {
   line-height: 45px;
   padding: 10px 0 0 12px;
 }
+
 .navbar-default .navbar-nav li a {
   color: #202020;
   font-size: 13px;
@@ -55,28 +64,43 @@ hr {
   line-height: 45px;
   letter-spacing: 1px;
 }
-.navbar-default .navbar-nav li a:hover { color: #eb5424; }
+
+.navbar-default .navbar-nav li a:hover { 
+  color: #eb5424; 
+}
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #eb5424;
   background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #eb5424;
   background-color: transparent;
 }
+
 .navbar-default .navbar-toggle {
   border: none;
   padding-top: 10px;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
   background: #eb5424;
   border-color: transparent;
 }
+
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { background-color: transparent }
+.navbar-default .navbar-toggle:focus { 
+  background-color: transparent; 
+}
+
+/* Add padding to the top of the body to prevent content from being hidden behind the navbar */
+body {
+  padding-top: 60px; /* Adjust this value according to the navbar height */
+}
 /* END NAVIGATION */
 
 /* START HOME */
@@ -98,9 +122,9 @@ hr {
   height: 100vh;
 }
 .tm-home-title,
- .tm-home-subtitle {
+.tm-home-subtitle {
   text-transform: uppercase;
- }
+}
 .tm-home-title { font-size: 60px; }
 .tm-home-subtitle {
   color: #eb5424;
@@ -165,7 +189,7 @@ hr {
   margin: 0;
 }
 .tm-portfolio .col-md-3,
- .tm-portfolio .col-sm-3 {
+.tm-portfolio .col-sm-3 {
   padding: 0;
   margin: 0;
 }
@@ -255,8 +279,8 @@ hr {
   -ms-transition: all 0.4s ease-in-out;
 }
 .filter-wrapper li a:focus,
- .filter-wrapper li a:hover,
- .filter-wrapper li a.selected {
+.filter-wrapper li a:hover,
+.filter-wrapper li a.selected {
   background: #eb5424;
   border-color: transparent;
   color: #ffffff;
