@@ -63,7 +63,7 @@ hr {
 
 .navbar-default .navbar-nav li a {
   color: #707070; /* Ash color for navigation links */
-  font-size: 2.6rem; /* Increased font size for better visibility */
+  font-size: 2.0rem; /* Increased font size for better visibility */
   font-weight: bold;
   line-height: 2.8125rem;
   letter-spacing: 1px;
@@ -175,7 +175,7 @@ hr {
 
 /* Common Styles */
 .tm-portfolio {
-  background: #f8f8f8;
+  background: #fs8;
   padding-top: 5rem;
 }
 
@@ -266,4 +266,3 @@ hr {
     background: var(--background-color);
     color: var(--primary-color);
 }
-ChatGPT said:
