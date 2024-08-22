@@ -1,5 +1,3 @@
-// custom.js
-
 jQuery(document).ready(function($) {
 
     // ISOTOPE FILTER
@@ -72,6 +70,11 @@ jQuery(document).ready(function($) {
 
     // WOW JS
     new WOW({ mobile: false }).init();
+
+    // NAVBAR TOGGLE
+    $('.navbar-toggle').click(function(){
+        $('.navbar-collapse').toggleClass('in');
+    });
 
 });
 
