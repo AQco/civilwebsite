@@ -121,17 +121,24 @@ body {
   text-align: center;  
   height: 100vh;
 }
+
 .tm-home-title,
 .tm-home-subtitle {
   text-transform: uppercase;
 }
-.tm-home-title { font-size: 60px; }
+
+.tm-home-title {
+  font-size: 60px;
+  color: #f5f5f5; /* New color for the main title */
+}
+
 .tm-home-subtitle {
-  color: #eb5424;
+  color: #f5f5f5; /* New color for the subtitle */
   font-weight: bold;
   padding-bottom: 40px;
   letter-spacing: 2px;
-}
+} 
+
 .tm-view-more-btn {
   background: #eb5424;
   color: #ffffff;
