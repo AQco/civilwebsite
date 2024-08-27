@@ -355,7 +355,7 @@ body {
 
 /* START ABOUT */
 .tm-about {
-  background: rgba(255, 255, 255, 0.8) url('../images/civil.jpg');
+  background: rgba(255, 255, 255, 0.1) url('../images/civil.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
