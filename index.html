@@ -30,6 +30,15 @@
         .tm-home-description {
             color: #333; /* Replace with the same color as "We help you build your dream home." */
         }
+
+        /* Fix for About Us section scrolling on mobile */
+        @media (max-width: 767px) {
+            #about {
+                position: relative;
+                z-index: 1;
+                background-color: #ffffff; /* Ensure the background is solid */
+            }
+        }
     </style>
 </head>
 
@@ -128,7 +137,7 @@
         </div>
     </section>
 <!-- END ABOUT -->
-   
+
     <!-- START WORK -->
 <section id="work" class="tm-padding-top-bottom-100">
     <div class="container">
@@ -231,7 +240,7 @@
     </div>
 </section>
 <!-- END WORK -->
-   
+
     <!-- SCRIPTS -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
