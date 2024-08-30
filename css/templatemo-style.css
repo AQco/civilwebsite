@@ -205,7 +205,34 @@ hr {
     margin-top: auto;
 }
 
-/* Responsive Adjustments */
+/* About Us Section Styles */
+.section-about-us {
+    background-color: #f7f7f7; /* Light gray background */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 0px; /* Minimize gap */
+}
+
+/* Our Mission and Our Values Section Styles */
+.section-mission, .section-values {
+    padding-top: 40px;  /* Reduce gap */
+    padding-bottom: 20px; /* Reduce gap */
+    margin-bottom: 0px;  /* Remove gap */
+}
+
+.section-mission h2, .section-values h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-mission p, .section-values p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
 @media (max-width: 991px) {
     .work-item {
         flex-basis: calc(50% - 15px);
