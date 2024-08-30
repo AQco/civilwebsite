@@ -31,12 +31,32 @@
             color: #333; /* Replace with the same color as "We help you build your dream home." */
         }
 
-        /* Fix for About Us section scrolling on mobile */
+        /* Fix for mobile scrolling issues */
         @media (max-width: 767px) {
-            #about {
+            body {
+                padding-top: 70px; /* Adjust based on your navbar height */
+            }
+
+            .navbar-fixed-top {
+                position: absolute;
+            }
+
+            #home, #vision, #values, #about, #work {
                 position: relative;
                 z-index: 1;
-                background-color: #ffffff; /* Ensure the background is solid */
+                background-color: #ffffff;
+            }
+
+            .templatemo-home {
+                min-height: auto;
+                padding: 60px 0;
+            }
+
+            .sticky-navigation {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 100;
             }
         }
     </style>
@@ -127,8 +147,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                        <h2 class="title">About <strong>Us</strong></h2>
-                    </div>
+                    <h2 class="title">About <strong>Us</strong></h2>
                     <p>Siraj Associates is a construction and contracting firm based in Kochi offering services in civil construction, technical consultancy, project management, and interior and landscaping works. The firm was established by Mr. Mohammed Siraj, a chartered civil engineer with more than 30 years of experience in civil contracting and construction management. After graduating from Govt. Engineering College, Thrissur in 1988, he has to his credit the experience of starting Delta Projects, a civil contracting firm in 1995, and leading the firm till 2001 as the managing partner. Later, when upgraded to Delco Project Pvt. Limited, he was the Executive Director from 2001 to 2011. He then led Faizaan Interiors and Developers as the CEO from 2011 to 2019.</p>
                     <p>Our experience and expertise lie in civil and finishing works of high-rise buildings, commercial and institutional structures, and residential villas with properties panned in Kerala and Bangalore.</p>
                     <p>Backed up by an adept team of professionals and headed by Mr. Siraj, we strive to offer services with an uncompromised commitment to Quality, Health, and Safety.</p>
@@ -136,110 +155,110 @@
             </div>
         </div>
     </section>
-<!-- END ABOUT -->
+    <!-- END ABOUT -->
 
     <!-- START WORK -->
-<section id="work" class="tm-padding-top-bottom-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-11">
-                <h2 class="title">Our <strong>Works</strong></h2>
+    <section id="work" class="tm-padding-top-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-11">
+                    <h2 class="title">Our <strong>Works</strong></h2>
+                </div>
+            </div>
+            <div class="work-container">
+                <!-- Residential Projects -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204777615/Residential-projects">
+                            <div class="image-placeholder">
+                                <img src="images/res 1.JPG" alt="Residential Projects">
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">RESIDENTIAL PROJECTS</h3>
+                        </a>
+                        <hr>
+                        <p>We excel in delivering high-quality residential projects, meticulously designed to meet your unique needs. Our expertise ensures that each home is not only aesthetically pleasing but also functional and comfortable, providing the perfect living environment for you and your family.</p>
+                        <a href="https://www.behance.net/gallery/204777615/Residential-projects" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Commercial Projects -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204777483/Commercial-Buildings">
+                            <div class="image-placeholder">
+                                <img src="images/com 1.jpg" alt="Commercial Projects">
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">COMMERCIAL PROJECTS</h3>
+                        </a>
+                        <hr>
+                        <p>Our commercial projects are crafted with precision, focusing on both functionality and aesthetics. We ensure that each building meets business requirements while creating an impressive and professional space for clients and employees.</p>
+                        <a href="https://www.behance.net/gallery/204777483/Commercial-Buildings" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Institutional Projects -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204776405/Schools">
+                            <div class="image-placeholder">
+                                <span>Image Placeholder</span>
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">INSTITUTIONAL PROJECTS</h3>
+                        </a>
+                        <hr>
+                        <p>We undertake institutional projects with the highest level of precision and quality control. From schools to government buildings, our work ensures that these spaces are both durable and conducive to their intended use.</p>
+                        <a href="https://www.behance.net/gallery/204776405/Schools" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Waterproofing Works -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204764193/Waterproofing">
+                            <div class="image-placeholder">
+                                <span>Image Placeholder</span>
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">WATERPROOFING WORKS</h3>
+                        </a>
+                        <hr>
+                        <p>Specializing in waterproofing solutions, we protect your investments from water damage. Our advanced techniques and materials ensure long-lasting protection, preserving the integrity of your structures.</p>
+                        <a href="https://www.behance.net/gallery/204764193/Waterproofing" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Flooring and tiling -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204763723/Flooring-and-tiling">
+                            <div class="image-placeholder">
+                                <span>Image Placeholder</span>
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">FLOORING AND TILING</h3>
+                        </a>
+                        <hr>
+                        <p>Our flooring and tiling services are designed to enhance the beauty and functionality of your interiors. We offer a wide range of options to suit your style, ensuring a perfect finish that complements your space.</p>
+                        <a href="https://www.behance.net/gallery/204763723/Flooring-and-tiling" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Slab Cutting -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204764161/Slab-cutting-and-concrete-wall-cutting">
+                            <div class="image-placeholder">
+                                <span>Image Placeholder</span>
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">SLAB CUTTING</h3>
+                        </a>
+                        <hr>
+                        <p>Our slab cutting services provide precise, efficient solutions for concrete structures. Whether for renovations or new constructions, we deliver accurate cuts that meet your project's specifications, ensuring structural integrity and smooth execution.</p>
+                        <a href="https://www.behance.net/gallery/204764161/Slab-cutting-and-concrete-wall-cutting" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="work-container">
-            <!-- Residential Projects -->
-            <div class="work-item">
-                <div class="work-wrapper">
-                    <a href="https://www.behance.net/gallery/204777615/Residential-projects">
-                        <div class="image-placeholder">
-                            <img src="images/res 1.JPG" alt="Residential Projects">
-                        </div>
-                        <h3 class="text-uppercase tm-work-h3">RESIDENTIAL PROJECTS</h3>
-                    </a>
-                    <hr>
-                    <p>We excel in delivering high-quality residential projects, meticulously designed to meet your unique needs. Our expertise ensures that each home is not only aesthetically pleasing but also functional and comfortable, providing the perfect living environment for you and your family.</p>
-                    <a href="https://www.behance.net/gallery/204777615/Residential-projects" class="btn btn-primary">View more</a>
-                </div>
-            </div>
-
-            <!-- Commercial Projects -->
-            <div class="work-item">
-                <div class="work-wrapper">
-                    <a href="https://www.behance.net/gallery/204777483/Commercial-Buildings">
-                        <div class="image-placeholder">
-                            <img src="images/com 1.jpg" alt="Commercial Projects">
-                        </div>
-                        <h3 class="text-uppercase tm-work-h3">COMMERCIAL PROJECTS</h3>
-                    </a>
-                    <hr>
-                    <p>Our commercial projects are crafted with precision, focusing on both functionality and aesthetics. We ensure that each building meets business requirements while creating an impressive and professional space for clients and employees.</p>
-                    <a href="https://www.behance.net/gallery/204777483/Commercial-Buildings" class="btn btn-primary">View more</a>
-                </div>
-            </div>
-
-            <!-- Institutional Projects -->
-            <div class="work-item">
-                <div class="work-wrapper">
-                    <a href="https://www.behance.net/gallery/204776405/Schools">
-                        <div class="image-placeholder">
-                            <span>Image Placeholder</span>
-                        </div>
-                        <h3 class="text-uppercase tm-work-h3">INSTITUTIONAL PROJECTS</h3>
-                    </a>
-                    <hr>
-                    <p>We undertake institutional projects with the highest level of precision and quality control. From schools to government buildings, our work ensures that these spaces are both durable and conducive to their intended use.</p>
-                    <a href="https://www.behance.net/gallery/204776405/Schools" class="btn btn-primary">View more</a>
-                </div>
-            </div>
-
-            <!-- Waterproofing Works -->
-            <div class="work-item">
-                <div class="work-wrapper">
-                    <a href="https://www.behance.net/gallery/204764193/Waterproofing">
-                        <div class="image-placeholder">
-                            <span>Image Placeholder</span>
-                        </div>
-                        <h3 class="text-uppercase tm-work-h3">WATERPROOFING WORKS</h3>
-                    </a>
-                    <hr>
-                    <p>Specializing in waterproofing solutions, we protect your investments from water damage. Our advanced techniques and materials ensure long-lasting protection, preserving the integrity of your structures.</p>
-                    <a href="https://www.behance.net/gallery/204764193/Waterproofing" class="btn btn-primary">View more</a>
-                </div>
-            </div>
-
-            <!-- Flooring and tiling -->
-            <div class="work-item">
-                <div class="work-wrapper">
-                    <a href="https://www.behance.net/gallery/204763723/Flooring-and-tiling">
-                        <div class="image-placeholder">
-                            <span>Image Placeholder</span>
-                        </div>
-                        <h3 class="text-uppercase tm-work-h3">FLOORING AND TILING</h3>
-                    </a>
-                    <hr>
-                    <p>Our flooring and tiling services are designed to enhance the beauty and functionality of your interiors. We offer a wide range of options to suit your style, ensuring a perfect finish that complements your space.</p>
-                    <a href="https://www.behance.net/gallery/204763723/Flooring-and-tiling" class="btn btn-primary">View more</a>
-                </div>
-            </div>
-
-            <!-- Slab Cutting -->
-            <div class="work-item">
-                <div class="work-wrapper">
-                    <a href="https://www.behance.net/gallery/204764161/Slab-cutting-and-concrete-wall-cutting">
-                        <div class="image-placeholder">
-                            <span>Image Placeholder</span>
-                        </div>
-                        <h3 class="text-uppercase tm-work-h3">SLAB CUTTING</h3>
-                    </a>
-                    <hr>
-                    <p>Our slab cutting services provide precise, efficient solutions for concrete structures. Whether for renovations or new constructions, we deliver accurate cuts that meet your project's specifications, ensuring structural integrity and smooth execution.</p>
-                    <a href="https://www.behance.net/gallery/204764161/Slab-cutting-and-concrete-wall-cutting" class="btn btn-primary">View more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END WORK -->
+    </section>
+    <!-- END WORK -->
 
     <!-- SCRIPTS -->
     <script src="js/jquery.js"></script>
