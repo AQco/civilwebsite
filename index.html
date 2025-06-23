@@ -85,13 +85,18 @@
         .tm-social .row {
             margin-left: 0;
             margin-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
         }
         .tm-social [class^="col-md-2"], .tm-social [class^="col-md-3"] {
             padding-left: 0;
             padding-right: 0;
+            display: flex;
         }
-        .tm-social .media {
-            min-height: 200px;
+        .tm-social .media, .tm-social .blog-box, .tm-social .address-box {
+            width: 100%;
+            min-height: 220px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -100,6 +105,7 @@
             color: #fff;
             cursor: pointer;
             transition: background 0.2s;
+            box-sizing: border-box;
         }
         .tm-social .media-body {
             margin-left: 15px;
