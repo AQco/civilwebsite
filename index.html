@@ -86,9 +86,40 @@
             margin-left: 0;
             margin-right: 0;
         }
-        .tm-social [class^="col-md-3"] {
+        .tm-social [class^="col-md-3"], .tm-social [class^="col-md-2"] {
             padding-left: 0;
             padding-right: 0;
+        }
+        .tm-social .media {
+            min-height: 180px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 8px;
+        }
+        .tm-social .media-body {
+            margin-left: 15px;
+        }
+        .tm-social .address-box a {
+            color: #1a237e;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .tm-social .blog-box {
+            background-color: #48c9b0;
+            color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .tm-social .blog-box a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -109,9 +140,10 @@
             <nav class="collapse navbar-collapse" id="rock-navigation">
                 <ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
                     <li><a href="#home" class="smoothScroll">Home</a></li>
-                    <li><a href="#work" class="smoothScroll">Our Works</a></li>
                     <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#work" class="smoothScroll">Our Works</a></li>
                     <li><a href="https://aqco.notion.site/Careers-at-Siraj-Associates-a86188a0a82646768760456f6e87852b" target="_blank" class="smoothScroll">Careers</a></li>
+                    <li><a href="https://sirajassociates.com/blog" target="_blank" class="smoothScroll">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -303,14 +335,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">                   
-                <h2 class="title">Get <strong>In Touch</strong></h2>
+                <h2 class="title">Get <strong>a Quote</strong></h2>
                 <hr>                   
             </div>
             <div class="col-md-1 col-sm-1"></div>
             <div class="col-md-10 col-sm-10" style="text-align:center;">
                 <div class="vertical-btn-group">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScz-2iSjkLdV0FitDq3d5t5pieLVyg8FE38_ejL7pd6Hw7smw/viewform?usp=header" target="_blank" class="btn btn-primary btn-lg" rel="noopener noreferrer">
-                        Fill Out Our Google Form
+                        Get a Quote
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=+918606890111&text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20Siraj%20Associates" target="_blank" class="btn btn-success btn-lg" rel="noopener noreferrer">
                         WhatsApp Us
@@ -327,7 +359,7 @@
 <section id="social" class="tm-social">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-3 wow rotateInUpLeft" data-wow-delay="0.3s">
+            <div class="col-md-2 col-sm-2 wow rotateInUpLeft" data-wow-delay="0.3s">
                 <div class="media facebook">
                     <a href="https://www.behance.net/ashfaqueahammed3">
                         <div class="media-object pull-left">
@@ -340,7 +372,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 wow rotateInUpLeft" data-wow-delay="0.6s">
+            <div class="col-md-2 col-sm-2 wow rotateInUpLeft" data-wow-delay="0.6s">
                 <div class="media twitter">
                     <a href="#">
                         <div class="media-object pull-left">
@@ -353,7 +385,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 wow rotateInUpLeft" data-wow-delay="0.9s">
+            <div class="col-md-2 col-sm-2 wow rotateInUpLeft" data-wow-delay="0.9s">
                 <div class="media pinterest">
                     <a href="https://aqco.notion.site/Careers-at-Siraj-Associates-a86188a0a82646768760456f6e87852b" target="_blank">
                         <div class="media-object pull-left">
@@ -367,7 +399,7 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 wow rotateInUpLeft" data-wow-delay="1.2s">
-                <div class="media address-box" style="background-color: #f9e79f; border-radius: 8px; padding: 20px; min-height: 140px; display: flex; align-items: center;">
+                <div class="media address-box" style="background-color: #f9e79f; border-radius: 8px; padding: 20px; min-height: 180px; display: flex; align-items: center;">
                     <div class="media-object pull-left">
                         <i class="fa fa-map-marker" style="font-size: 2em; color: #b7950b;"></i>
                     </div>
@@ -378,6 +410,17 @@
                             CSEZ, Kakkanad, Kochi, Kerala 682037<br>
                             <strong>Phone:</strong> <a href="tel:08606890111">086068 90111</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 wow rotateInUpLeft" data-wow-delay="1.5s">
+                <div class="media blog-box">
+                    <div class="media-object pull-left">
+                        <i class="fa fa-rss" style="font-size: 2em;"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading tm-social-title">Our Blog</h4>
+                        <h3><a href="https://sirajassociates.com/blog" target="_blank">Read Our Blog</a></h3>
                     </div>
                 </div>
             </div>
