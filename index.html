@@ -83,16 +83,17 @@
             max-width: 350px;
         }
         .tm-social .row {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
             margin-left: 0;
             margin-right: 0;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: stretch;
         }
-        .tm-social [class^="col-md-2"], .tm-social [class^="col-md-3"] {
+        .tm-social [class^="col-md-"] {
+            display: flex;
+            flex: 1 1 0;
             padding-left: 0;
             padding-right: 0;
-            display: flex;
         }
         .tm-social .media, .tm-social .blog-box, .tm-social .address-box {
             width: 100%;
