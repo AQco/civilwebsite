@@ -71,6 +71,25 @@
             height: 100%;
             border: 0;
         }
+        .vertical-btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .vertical-btn-group .btn {
+            width: 100%;
+            max-width: 350px;
+        }
+        .tm-social .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .tm-social [class^="col-md-3"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
     </style>
 </head>
 
@@ -289,7 +308,7 @@
             </div>
             <div class="col-md-1 col-sm-1"></div>
             <div class="col-md-10 col-sm-10" style="text-align:center;">
-                <div class="btn-group" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px;">
+                <div class="vertical-btn-group">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScz-2iSjkLdV0FitDq3d5t5pieLVyg8FE38_ejL7pd6Hw7smw/viewform?usp=header" target="_blank" class="btn btn-primary btn-lg" rel="noopener noreferrer">
                         Fill Out Our Google Form
                     </a>
