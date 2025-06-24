@@ -13,7 +13,613 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- SITE TITLE -->
+    <title>Siraj Associates</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        /* Custom styles for heading colors */
+        h2.title {
+            color: #333; /* Replace with the navbar item color */
+        }
+        
+
+        /* Matching color for the description sentence */
+        .tm-home-description {
+            color: #333; /* Replace with the same color as "We help you build your dream home." */
+        }
+
+        /* Fix for mobile scrolling issues */
+        @media (max-width: 767px) {
+            body {
+                padding-top: 70px; /* Adjust based on your navbar height */
+            }
+
+            .navbar-fixed-top {
+                position: absolute;
+            }
+
+            #home, #vision, #values, #about, #work {
+                position: relative;
+                z-index: 1;
+                background-color: #ffffff;
+            }
+
+            .templatemo-home {
+                min-height: auto;
+                padding: 60px 0;
+            }
+
+            .sticky-navigation {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 100;
+            }
+        }
+        .responsive-google-form {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .responsive-google-form iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .vertical-btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .vertical-btn-group .btn {
+            width: 100%;
+            max-width: 350px;
+        }
+        .tm-social .row {
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+        .tm-social [class^="col-md-2"], .tm-social [class^="col-md-3"] {
+            padding-left: 0;
+            padding-right: 0;
+            display: flex;
+        }
+        .tm-social .media, .tm-social .blog-box, .tm-social .address-box {
+            width: 100%;
+            min-height: 220px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 0;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s;
+            box-sizing: border-box;
+        }
+        .tm-social .media-body, .tm-social .blog-box .media-body, .tm-social .address-box .media-body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            background: transparent !important;
+        }
+        .tm-social .media-body *,
+        .tm-social .blog-box .media-body *,
+        .tm-social .address-box .media-body * {
+            background: transparent !important;
+            margin: 0;
+            padding: 0;
+        }
+        .tm-social .media-heading.tm-social-title,
+        .tm-social .blog-box .media-heading.tm-social-title,
+        .tm-social .address-box .media-heading.tm-social-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.3em;
+            text-decoration: none;
+        }
+        .tm-social .media-body h3,
+        .tm-social .blog-box .media-body h3,
+        .tm-social .address-box .media-body h3,
+        .tm-social .address-box .media-body div {
+            font-size: 1em;
+            font-weight: 400;
+            color: #fff;
+            margin: 0;
+            text-decoration: none;
+        }
+        .tm-social .media-body a,
+        .tm-social .blog-box .media-body a,
+        .tm-social .address-box .media-body a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        .tm-social .facebook {
+            background: #3b5998;
+        }
+        .tm-social .facebook:hover {
+            background: #2d4373;
+        }
+        .tm-social .twitter {
+            background: #e4405f;
+        }
+        .tm-social .twitter:hover {
+            background: #c13584;
+        }
+        .tm-social .pinterest {
+            background: #ff6f00;
+        }
+        .tm-social .pinterest:hover {
+            background: #e65100;
+        }
+        .tm-social .blog-box {
+            background: #009688;
+            color: #fff;
+            border-radius: 0;
+            padding: 20px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: background 0.2s;
+        }
+        .tm-social .blog-box:hover {
+            background: #00796b;
+        }
+        .tm-social .address-box {
+            background: #607d8b !important;
+            color: #fff;
+            border-radius: 0;
+            padding: 20px;
+            min-height: 220px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            transition: background 0.2s;
+        }
+        .tm-social .address-box:hover {
+            background: #455a64 !important;
+        }
+        .tm-social .address-box * {
+            background: transparent !important;
+        }
+        .tm-social .address-box a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .tm-social .blog-box a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .tm-social .social-row {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .tm-social .social-col {
+            flex: 1 1 20%;
+            max-width: 20%;
+            display: flex;
+            align-items: stretch;
+            padding: 0;
+            margin: 0;
+        }
+        @media (max-width: 767px) {
+            .tm-social .social-row {
+                flex-direction: column;
+            }
+            .tm-social .social-col {
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .tm-social .media, .tm-social .blog-box, .tm-social .address-box {
+                min-height: 120px;
+                padding: 20px 10px;
+            }
+        }
+        .custom-footer {
+            background: #646d68;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            font-family: 'Raleway', Arial, sans-serif;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-col {
+            flex: 1 1 200px;
+            min-width: 180px;
+        }
+        .footer-title {
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover {
+            color: #ffb347;
+        }
+        @media (max-width: 900px) {
+            .footer-container {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+        }
+        /* Accent orange for headings and highlights */
+        .card-title, .section-title, .project-title, .tm-work-h3, .navbar-nav > .active > a, .navbar-nav > li > a:hover {
+            color: #ff6600 !important;
+            font-weight: bold;
+        }
+        /* View more button styling */
+        .btn, .btn-primary {
+            background-color: #646d68 !important;
+            border: none;
+            color: #fff !important;
+            font-weight: bold;
+        }
+        .btn:hover, .btn-primary:hover {
+            background-color: #ff6600 !important;
+            color: #fff !important;
+            font-weight: bold;
+        }
+        /* Reduce vertical spacing between sections */
+        .tm-padding-top-bottom-100 {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+        /* Reduce margin below section headings */
+        h2.title {
+            margin-bottom: 20px !important;
+            margin-left: 0 !important;
+        }
+        /* Align Our Works heading to the left edge of the section */
+        #work .title {
+            text-align: left !important;
+            margin-left: 0 !important;
+            padding-left: 15px !important;
+        }
+        /* Reduce spacing between values and works, works and about */
+        #values {
+            margin-bottom: 0 !important;
+        }
+        #work {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        #about {
+            margin-top: 0 !important;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#rock-navigation">
+    <!-- START NAVIGATION -->
+    <div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">SIRAJ ASSOCIATES</a>
+            </div>
+            <nav class="collapse navbar-collapse" id="rock-navigation">
+                <ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#work" class="smoothScroll">Our Works</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="https://aqco.notion.site/Careers-at-Siraj-Associates-a86188a0a82646768760456f6e87852b" target="_blank" class="smoothScroll">Careers</a></li>
+                    <li><a href="https://yummy-savory-e88.notion.site/Blog-21bf1060489a80a0aecbe89ee4a12168?source=copy_link" target="_blank" class="smoothScroll">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END NAVIGATION -->
+
+    <!-- START HOME -->
+<section id="home" class="templatemo-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-1"></div>
+            <div class="col-md-8 col-sm-10">
+                <h1 class="tm-home-title">We help you build your <strong>dream home.</strong></h1>
+                <h2 class="tm-home-description" style="color: white;">We are a construction and contracting firm from <strong>Cochin</strong>. We strive to provide the highest <strong>quality</strong> service with a commitment to <strong>safety</strong> and <strong>customer satisfaction</strong>.</h2>
+                <a href="https://api.whatsapp.com/send?phone=+916235393474&text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20Siraj%20Associates" class="btn btn-default smoothScroll tm-view-more-btn">Get In Touch</a>
+            </div>
+            <div class="col-md-2 col-sm-1"></div>
+        </div>
+    </div>
+</section>
+    <!-- END HOME -->
+
+    <!-- Place Let's Connect section here -->
+    <section id="contact" class="tm-contact" style="background-color: #f2f2f2; padding-top: 20px; padding-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">Let's <strong>Connect</strong></h2>
+                    <hr>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-10 col-sm-10" style="text-align:center;">
+                    <div class="vertical-btn-group">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScz-2iSjkLdV0FitDq3d5t5pieLVyg8FE38_ejL7pd6Hw7smw/viewform?usp=header" target="_blank" class="btn btn-primary btn-lg" rel="noopener noreferrer">
+                            Get a Quote
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=+918606890111&text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20Siraj%20Associates" target="_blank" class="btn btn-success btn-lg" rel="noopener noreferrer">
+                            WhatsApp Us
+                        </a>
+                        <a href="mailto:info@sirajassociates.com" class="btn btn-info btn-lg" rel="noopener noreferrer">
+                            Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision and Mission section follows here -->
+    <section id="vision" class="tm-padding-top-bottom-100">
+        <div class="container">
+            <div class="row">
+                <!-- Left column -->
+                <div class="col-md-6 col-sm-6">
+                    <h2 class="title">Our <strong>Vision</strong></h2>
+                    <p style="text-align: justify;">Our vision at Siraj Associates is to emerge as the foremost construction firm in Kerala and be known for delivering bespoke projects that exceed expectations. We aspire to set new benchmarks in the industry by consistently providing assured quality, operational efficiency, and timely project completion. We envision becoming the preferred choice for homeowners and businesses alike, earning their trust and loyalty through our unwavering commitment to excellence. We aim to contribute significantly to the infrastructure and residential landscape of Kerala, transforming dreams into reality, one project at a time.</p>
+                </div>
+                <!-- Right column -->
+                <div class="col-md-6 col-sm-6">
+                    <h2 class="title">Our <strong>Mission</strong></h2>
+                    <p style="text-align: justify;">At Siraj Associates, our mission is to deliver unparalleled quality in every structure we build. We are dedicated to adhering to all necessary standards and regulations, ensuring that every project we undertake is a symbol of excellence. By leveraging the latest technologies and employing efficient coordination, we provide services that are not only reliable but also ensure the complete satisfaction of our clients. Our mission is to create homes and structures that stand the test of time, reflecting the trust and confidence placed in us by our customers. We aim to be the go-to civil engineering and contracting firm in Kerala, for all residential and commercial projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="tm-padding-top-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">Our <strong>Values</strong></h2>
+                    <p style="text-align: justify;">Through our unwavering commitment to our mission and core values, we aim to be recognized as a trusted and preferred construction partner. We strive to exceed our clients' expectations, build long-term partnerships, and contribute to the development of sustainable and inspiring structures that positively impact communities. At Siraj Associates, we are dedicated to transforming visions into reality, one exceptional construction project at a time.</p>
+                    <ul style="text-align: justify;">
+                        <li><strong>Quality Construction: </strong>We believe in constructing buildings that reflect superior craftsmanship and attention to detail. Our focus on quality ensures that every project we undertake meets the highest standards of durability and aesthetic appeal.</li>
+                        <li><strong>Timely completion: </strong>We understand the importance of deadlines and are committed to completing projects on time, every time. Our efficient project management practices ensure that we meet our commitments without compromising on quality.</li>
+                        <li><strong>Customer satisfaction: </strong>Our clients are at the center of everything we do. We strive to exceed their expectations by delivering projects that not only meet their requirements but also enhance their living and working environments.</li>
+                        <li><strong>Technical excellence: </strong>We continuously seek to improve our technical expertise by adopting the latest construction technologies and methodologies. Our team is dedicated to staying ahead of industry trends to provide innovative solutions that deliver value to our clients.</li>
+                        <li><strong>Adopting the latest construction machinery and management techniques: </strong>We invest in the latest construction machinery and management techniques to ensure our projects are executed with precision, efficiency, and safety. By embracing modern tools and practices, we are able to deliver projects that are not only high-quality but also cost-effective and sustainable.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END RESUME -->
+
+    <!-- START WORK -->
+    <section id="work" class="tm-padding-top-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-11">
+                    <h2 class="title">Our <strong>Works</strong></h2>
+                </div>
+            </div>
+            <div class="work-container">
+                <!-- Residential Projects -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204777615/Residential-projects">
+                            <div class="image-placeholder">
+                                <img src="images/res 1.JPG" alt="Residential Projects">
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">RESIDENTIAL PROJECTS</h3>
+                        </a>
+                        <hr>
+                        <p style="text-align: justify;">We excel in delivering high-quality residential projects, meticulously designed to meet your unique needs. Our expertise ensures that each home is not only aesthetically pleasing but also functional and comfortable, providing the perfect living environment for you and your family.</p>
+                        <a href="https://www.behance.net/gallery/204777615/Residential-projects" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Commercial Projects -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204777483/Commercial-Buildings">
+                            <div class="image-placeholder">
+                                <img src="images/com 1.jpg" alt="Commercial Projects">
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">COMMERCIAL PROJECTS</h3>
+                        </a>
+                        <hr>
+                        <p style="text-align: justify;">Our commercial projects are crafted with precision, focusing on both functionality and aesthetics. We ensure that each building meets business requirements while creating an impressive and professional space for clients and employees.</p>
+                        <a href="https://www.behance.net/gallery/204777483/Commercial-Buildings" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+                <!-- Institutional Projects -->
+                <div class="work-item">
+                    <div class="work-wrapper">
+                        <a href="https://www.behance.net/gallery/204776405/Schools">
+                            <div class="image-placeholder">
+                                <img src="images/school 4.JPG" alt="Institutional Projects">
+                            </div>
+                            <h3 class="text-uppercase tm-work-h3">INSTITUTIONAL PROJECTS</h3>
+                        </a>
+                        <hr>
+                        <p style="text-align: justify;">We undertake institutional projects with the highest level of precision and quality control. From schools to government buildings, our work ensures that these spaces are both durable and conducive to their intended use.</p>
+                        <a href="https://www.behance.net/gallery/204776405/Schools" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+
+               <!-- HIGH RISE BUILDINGS -->
+<div class="work-item">
+    <div class="work-wrapper">
+        <a href="https://www.behance.net/gallery/206910641/High-rise-buildings">
+            <div class="image-placeholder">
+                                <img src="images/highrise.JPG" alt="High Rise">
+                            </div>
+            <h3 class="text-uppercase tm-work-h3">HIGH RISE BUILDINGS</h3>
+        </a>
+        <hr>
+        <p style="text-align: justify;">We specialize in constructing high-rise buildings that combine modern design with structural integrity. Our projects are tailored to meet the demands of urban living, providing both luxury and functionality, while ensuring safety and durability in every aspect of construction.</p>
+        <a href="https://www.behance.net/gallery/206910641/High-rise-buildings" class="btn btn-primary">View more</a>
+    </div>
+</div>
+
+<!-- STEEL STRUCTURES -->
+<div class="work-item">
+    <div class="work-wrapper">
+        <a href="https://www.behance.net/gallery/204763723/Flooring-and-tiling">
+            <div class="image-placeholder">
+                <img src="images/steel.JPG" alt="Steel Structures">
+            </div>
+            <h3 class="text-uppercase tm-work-h3">STEEL STRUCTURES</h3>
+        </a>
+        <hr>
+        <p style="text-align: justify;">Our expertise in steel structures ensures robust and efficient building solutions. We deliver projects that are not only strong and durable but also adaptable to various architectural designs, providing a solid foundation for both commercial and industrial applications.</p>
+        <a href="https://www.behance.net/gallery/204763723/Flooring-and-tiling" class="btn btn-primary">View more</a>
+    </div>
+</div>
+
+<!-- SPECIALISED JOBS -->
+<div class="work-item">
+    <div class="work-wrapper">
+        <a href="https://www.behance.net/gallery/204764161/Slab-cutting-and-concrete-wall-cutting">
+            <div class="image-placeholder">
+                <img src="images/special.JPG" alt="Special Jobs">
+            </div>
+            <h3 class="text-uppercase tm-work-h3">SPECIALISED JOBS</h3>
+        </a>
+        <hr>
+        <p style="text-align: justify;">Our specialized services, including flooring and tiling, waterproofing, and slab cutting, are designed to meet your specific needs. We use advanced techniques and materials to deliver high-quality results, ensuring that each project is completed with precision and attention to detail.</p>
+        <a href="https://www.behance.net/gallery/204764161/Slab-cutting-and-concrete-wall-cutting" class="btn btn-primary">View more</a>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <!-- END WORK -->
+
+<!-- START CONTACT -->
+<section id="about" class="tm-about" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">About <strong>Us</strong></h2>
+                <p style="text-align: justify;">Siraj Associates is a premier construction and contracting firm based in Kochi, Kerala, renowned for delivering excellence in civil construction, technical consultancy, project management, and interior and landscaping works. Founded by Mr. Mohammed Siraj, a distinguished chartered civil engineer with over 30 years of industry experience, Siraj Associates is synonymous with quality, innovation, and reliability in the construction sector.</p>
+                <p style="text-align: justify;">Mr. Mohammed Siraj, the driving force behind Siraj Associates, is an accomplished civil engineer who graduated from the prestigious Government Engineering College, Thrissur, in 1988. His remarkable career began with the establishment of Delta Projects in 1995, a civil contracting firm where he served as the Managing Partner until 2001. His leadership and vision played a pivotal role in transforming Delta Projects into Delco Project Pvt. Limited, where he held the position of Executive Director from 2001 to 2011. Following this, he led Faizaan Interiors and Developers as the CEO from 2011 to 2019, further solidifying his reputation as a leader in the industry.</p>
+                <p style="text-align: justify;">At Siraj Associates, we offer a comprehensive range of services designed to meet the diverse needs of our clients:</p>
+                <ul style="text-align: justify;">
+                    <li><strong>Civil Construction:</strong> We specialize in the civil and finishing works of high-rise buildings, commercial complexes, institutional structures, and residential villas. Our projects span across Kerala and Bangalore, each reflecting our commitment to excellence and precision.</li>
+                    <li><strong>Technical Consultancy:</strong> With decades of experience, we provide expert consultancy services to guide our clients through every stage of their construction projects. From initial planning to execution, our technical insights ensure that projects are completed efficiently and to the highest standards.</li>
+                    <li><strong>Project Management:</strong> Our project management services are designed to deliver projects on time and within budget. We utilize the latest management techniques to oversee every aspect of construction, ensuring seamless coordination and execution.</li>
+                    <li><strong>Interior and Landscaping Works:</strong> Beyond structural construction, we offer bespoke interior design and landscaping services. Our team creates spaces that are not only functional but also aesthetically pleasing, transforming our clients' visions into reality.</li>
+                </ul>
+                <p style="text-align: justify;">At Siraj Associates, we are backed by a team of highly skilled professionals, all driven by a shared commitment to Quality, Health, and Safety. Under the leadership of Mr. Siraj, we adhere to the highest industry standards, ensuring that every project we undertake is built to last. Our focus on continuous improvement and adopting the latest construction technologies enables us to deliver innovative solutions that meet the evolving needs of our clients.</p>
+                <p style="text-align: justify;">With a legacy of excellence and a track record of successful projects, Siraj Associates stands out as a trusted partner in the construction industry. Our experience, combined with our unwavering dedication to client satisfaction, makes us the preferred choice for residential, commercial, and institutional projects in Kerala and beyond.</p>
+                <p style="text-align: justify;">Whether you're looking to build a high-rise structure, a commercial complex, or a dream home, Siraj Associates is here to bring your vision to life with unmatched expertise and professionalism.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END ABOUT -->
+
+<!-- Minimal Modern Footer -->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-title">Siraj Associates</div>
+      <ul>
+        <li><a href="#work">Portfolio</a></li>
+        <li><a href="https://aqco.notion.site/Careers-at-Siraj-Associates-a86188a0a82646768760456f6e87852b" target="_blank">Career</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Socials</div>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="https://yummy-savory-e88.notion.site/Blog-21bf1060489a80a0aecbe89ee4a12168?source=copy_link" target="_blank">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Get in Touch</div>
+      <ul>
+        <li>Sunshine Valley, Thuthiyoor, Adarsha School Rd, CSEZ, Kakkanad, Kochi, Kerala 682037</li>
+        <li><a href="mailto:info@sirajassociates.com">info@sirajassociates.com</a></li>
+        <li><a href="tel:08606890111">086068 90111</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
+type='text/css'>
 
     <style>
         /* Custom styles for heading colors */
