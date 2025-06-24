@@ -239,6 +239,53 @@
                 padding: 20px 10px;
             }
         }
+        .custom-footer {
+            background: #646d68;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            font-family: 'Raleway', Arial, sans-serif;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-col {
+            flex: 1 1 200px;
+            min-width: 180px;
+        }
+        .footer-title {
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover {
+            color: #ffb347;
+        }
+        @media (max-width: 900px) {
+            .footer-container {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 
@@ -535,11 +582,37 @@
 </section>
 <!-- END SOCIAL -->
 
-<div class="col-md-1 col-sm-1"></div>
-<div class="col-md-12 col-sm-12">
-    <p>Copyright &copy; 2018 Ultra Profile
-    . design: <a rel="nofollow noopener" href="https://templatemo.com">template mo</a></p>
-</div>
+<!-- Minimal Modern Footer -->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-title">Siraj Associates</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Our Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://yummy-savory-e88.notion.site/Blog-21bf1060489a80a0aecbe89ee4a12168?source=copy_link" target="_blank">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Follow</div>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.behance.net/ashfaqueahammed3" target="_blank">Behance</a></li>
+        <li><a href="https://aqco.notion.site/Careers-at-Siraj-Associates-a86188a0a82646768760456f6e87852b" target="_blank">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Get in Touch</div>
+      <ul>
+        <li><a href="mailto:info@sirajassociates.com">info@sirajassociates.com</a></li>
+        <li><a href="tel:08606890111">086068 90111</a></li>
+        <li>Sunshine Valley, Thuthiyoor, Adarsha School Rd, CSEZ, Kakkanad, Kochi, Kerala 682037</li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
     <!-- SCRIPTS -->
     <script src="js/jquery.js"></script>
