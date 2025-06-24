@@ -286,25 +286,22 @@
                 align-items: flex-start;
             }
         }
-        /* Button color update */
-        .btn,
-        .btn-primary,
-        .btn-success,
-        .btn-info,
-        .btn-default {
-            background-color: #646d68 !important;
-            border-color: #646d68 !important;
-            color: #fff !important;
-            transition: background 0.2s, border 0.2s;
+        /* Accent orange for headings and highlights */
+        .card-title, .section-title, .project-title, .tm-work-h3, .navbar-nav > .active > a, .navbar-nav > li > a:hover {
+            color: #ff6600 !important;
+            font-weight: bold;
         }
-        .btn:hover,
-        .btn-primary:hover,
-        .btn-success:hover,
-        .btn-info:hover,
-        .btn-default:hover {
-            background-color: #4d5551 !important;
-            border-color: #4d5551 !important;
+        /* View more button styling */
+        .btn, .btn-primary {
+            background-color: #646d68 !important;
+            border: none;
             color: #fff !important;
+            font-weight: bold;
+        }
+        .btn:hover, .btn-primary:hover {
+            background-color: #ff6600 !important;
+            color: #fff !important;
+            font-weight: bold;
         }
     </style>
 </head>
