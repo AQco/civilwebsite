@@ -82,19 +82,17 @@
             width: 100%;
             max-width: 350px;
         }
-        .tm-social .row {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: stretch;
-            margin-left: 0;
-            margin-right: 0;
+        .tm-social .container-fluid, .tm-social .row {
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
         .tm-social .custom-col {
             flex: 1 1 20%;
             max-width: 20%;
             display: flex;
-            padding-left: 0;
-            padding-right: 0;
+            padding: 0;
+            margin: 0;
         }
         .tm-social .media, .tm-social .blog-box, .tm-social .address-box {
             width: 100%;
@@ -108,15 +106,26 @@
             cursor: pointer;
             transition: background 0.2s;
             box-sizing: border-box;
+            margin: 0;
+            padding: 0 10px;
+            background-clip: padding-box;
         }
         .tm-social .media-body, .tm-social .blog-box .media-body, .tm-social .address-box .media-body {
-            margin-left: 0;
-            padding: 0 10px;
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
             width: 100%;
+            background: transparent !important;
+        }
+        .tm-social .media-body *,
+        .tm-social .blog-box .media-body *,
+        .tm-social .address-box .media-body * {
+            background: transparent !important;
+            margin: 0;
+            padding: 0;
         }
         .tm-social .media-heading.tm-social-title,
         .tm-social .blog-box .media-heading.tm-social-title,
@@ -439,7 +448,7 @@
 
 <!-- START SOCIAL -->
 <section id="social" class="tm-social">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="custom-col wow rotateInUpLeft" data-wow-delay="0.3s">
                 <div class="media facebook">
