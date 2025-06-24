@@ -109,8 +109,39 @@
             transition: background 0.2s;
             box-sizing: border-box;
         }
-        .tm-social .media-body {
-            margin-left: 15px;
+        .tm-social .media-body, .tm-social .blog-box .media-body, .tm-social .address-box .media-body {
+            margin-left: 0;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .tm-social .media-heading.tm-social-title,
+        .tm-social .blog-box .media-heading.tm-social-title,
+        .tm-social .address-box .media-heading.tm-social-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.3em;
+            text-decoration: none;
+        }
+        .tm-social .media-body h3,
+        .tm-social .blog-box .media-body h3,
+        .tm-social .address-box .media-body h3,
+        .tm-social .address-box .media-body div {
+            font-size: 1em;
+            font-weight: 400;
+            color: #fff;
+            margin: 0;
+            text-decoration: none;
+        }
+        .tm-social .media-body a,
+        .tm-social .blog-box .media-body a,
+        .tm-social .address-box .media-body a {
+            color: #fff;
+            text-decoration: none !important;
         }
         .tm-social .facebook {
             background: #3b5998;
